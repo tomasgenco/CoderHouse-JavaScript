@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+
+
+#btnCarrito{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+}
+
+.card{
+    height:max-content;
+    min-height: 415px;
+    display: flex;
+}
+
+#titulo{
+    font-family: 'The Nautigal', cursive;
+    font-size: 75px;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.containerRedes{
+    display: flex;
+    justify-content: end;
+        
+}
+.redes{
+    font-size: 64px;
+    border: none;
+    color: black;
+    margin: 10px;
+}
+
+#contenedorProductos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    column-gap: 15px;
+}
+
+#contenedorProductosCarrito{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.productoCarrito{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#eliminarProductoCarrito{
+    color: red;
+    font-size: 25px;
+    border: none;
+}
+
+.modal-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedorBotonesModal{
+    display: flex;
+
+}
+
+.btn{
+    margin: 5px;
+}
+
+
