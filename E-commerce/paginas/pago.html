@@ -19,20 +19,199 @@
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
-
-
-
-
-
-
-
-
 <body>
+
+    <header class="container-fluid">
+
+        <a href="../index.html" id="tittle">
+            <h1 id="titulo">Demon Store</h1>
+        </a>
+        
+        <button tye="button" id="btnCarrito" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="contadorCarrito-pago">0</p>
+        </button>
+        
+    </header>
+
+
+
+    <main id="carrito-pago">
+
+
+      <div id="header-pago">
+        <h6>Producto</h6>
+        <h6>Cantidad</h6>
+        <h6>Total</h6>
+      </div>
+
+      <hr>
+
+      <div id="body-pago">
+        
+       
+      </div>
+
+      <div id="footer-pago">
+          <b id="total">Total: </b>
+      </div>
+
+    </main>
+
+
+    
     
 
 
+    <div class="container" id="form-pago" >
+     
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de Envio</font></font></h4>
+        <form class="needs-validation was-validated" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Se requiere un nombre válido.
+              </font></font></div>
+            </div>
 
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apellido</font></font></label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Se requiere apellido válido.
+              </font></font></div>
+            </div>
 
+            <div class="col-12">
+              <label for="username" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre de usuario</font></font></label>
+              <div class="input-group has-validation">
+                <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@</font></font></span>
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  Su nombre de usuario es requerido.
+                </font></font></div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Correo electrónico </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Opcional)</font></font></span></label>
+              <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Ingrese una dirección de correo electrónico válida para actualizaciones de envío.
+              </font></font></div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección</font></font></label>
+              <input type="text" class="form-control" id="address" placeholder="1234 calle principal" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Por favor introduzca su direccion de envio.
+              </font></font></div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección 2 </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Opcional)</font></font></span></label>
+              <input type="text" class="form-control" id="address2" placeholder="apartamento o suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">País</font></font></label>
+              <select class="form-select" id="country" required="">
+                <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elegir...</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Argentina</font></font></option>
+              </select>
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Seleccione un país válido.
+              </font></font></div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estado</font></font></label>
+              <select class="form-select" id="state" required="">
+                <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elegir...</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buenos Aires</font></font></option>
+              </select>
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Proporcione un estado válido.
+              </font></font></div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Codigo Postal (ZIP)</font></font></label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Código postal requerido.
+              </font></font></div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+         
+
+          <hr class="my-4">
+
+          <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pago</font></font></h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for="credit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de crédito</font></font></label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarjeta de débito</font></font></label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="paypal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paypal</font></font></label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre en la tarjeta</font></font></label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+              <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre completo como se muestra en la tarjeta</font></font></small>
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Se requiere el nombre en la tarjeta
+              </font></font></div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Número de Tarjeta de Crédito</font></font></label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Se requiere número de tarjeta de crédito
+              </font></font></div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vencimiento</font></font></label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Fecha de vencimiento requerida
+              </font></font></div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CVV</font></font></label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+              <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Código de seguridad requerido
+              </font></font></div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Continuar a la comprobación</font></font></button>
+        </form>
+      </div>
+    </div>
 
 
     
@@ -50,19 +229,87 @@
 <footer>
 
 
+  <div>
 
-    <div class="containerRedes">
-        <a href="https://www.instagram.com/_tomasgenco/"><i class="fa-brands fa-instagram redes"></i></a>
-        <a href="https://www.linkedin.com/in/tomas-genco-096925231/"><i class="fa-brands fa-linkedin redes"></i></a>
-        <a href="https://github.com/tomasgenco"><i class="fa-brands fa-github redes"></i></a>
-    </div>
-
-    
+ 
+       <div id="footerHead" class="container">
 
 
+         <div>
+
+           <h4>Contactános</h4>
+
+           <div>
+
+             <i class="fa-solid fa-phone"></i>
+             <span>2284688741</span>
+
+           </div>
+
+           <div style="display: flex;">
+             <i class="fa-solid fa-envelope"></i>
+             <p>tomasgenco9@gmail.com</p>
+           </div>
+
+         </div>
 
 
-</footer>
+           <div>
+
+
+             <h4>Redes</h4> 
+
+             <div class="containerRedes">
+                 <a href="https://www.instagram.com/_tomasgenco/"><i class="fa-brands fa-instagram redes"></i></a>
+                 <a href="https://www.linkedin.com/in/tomas-genco-096925231/"><i class="fa-brands fa-linkedin redes"></i></a>
+                 <a href="https://github.com/tomasgenco"><i class="fa-brands fa-github redes"></i></a>
+             </div>
+
+           </div>
+
+       </div>
+
+
+   </div>
+
+   <hr class="container">
+
+   <div id="footerBody" class="container">
+
+
+     <h4>MEDIOS DE PAGO</h4>
+
+
+     <div id="payments" class="col-md-8">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" alt="">
+           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" alt="">
+     </div>
+   </div>
+
+   <hr class="container">
+
+   <div id="footer" class="">
+
+       <p>Copyright TOMAS GENCO | OLAVARRIA - 2022. Todos los derechos reservados</p>
+
+   </div>
+         
+         
+         
+         
+         
+ </footer>
 
 
 
@@ -78,6 +325,7 @@
 
 <!-- App js -->
 
-<script src="../js/app.js"></script>
+<script src="../js/pago.js"></script>
+
 </body>
 </html>

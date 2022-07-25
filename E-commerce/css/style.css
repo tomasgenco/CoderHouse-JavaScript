@@ -7,14 +7,103 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 15px;
+    background: black;
+    color: white;
 }
+
+#header-top{
+    background: #f4ac04;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#descuento{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#header-mid{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+#header-mid div{
+    display: flex;
+    align-items: center;
+}
+
+#header-mid a{
+    display: flex;
+    justify-content: start;
+}
+
+#form-pago{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-xl button{
+    margin-left: 45%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#tittle{
+    text-decoration: none;
+    color: white;
+}
+
+#section-informate{
+    display: flex;
+    width: 100vw;
+    background: rgba(4,4,4,0.1);
+    justify-content: space-around;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+#section-informate svg {
+
+    width: 55px;
+    margin-top: 100%;
+}
+
+.serviceItem{
+    display: flex;
+    margin: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.icon-2x{
+    font-size: 2em;
+    color: white;
+}
+
+
+
+
 
 
 
@@ -27,37 +116,77 @@ header{
 }
 
 .card{
-    height:max-content;
     min-height: 415px;
     display: flex;
 }
+
+
+.fa-comment{
+    color: white;
+    font-size: 2em;
+}
+
+.fa-user{
+    font-size: 2em;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+
+
 
 #titulo{
     font-family: 'The Nautigal', cursive;
     font-size: 75px;
 }
 
+#resultado-search{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
 .modal-footer{
     display: flex;
     justify-content: space-evenly;
 }
 
 
-.containerRedes{
-    display: flex;
-    justify-content: end;
-        
-}
+
 .redes{
-    font-size: 64px;
     border: none;
     color: black;
     margin: 10px;
+    font-size: 2em;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: rgba(4,4,4,0.1);
+}
+
+#footerHead{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#payments{
+width: 60%;
+}
+
+#payments img {
+    height: 20px;
+    width: 45px;
+}
+
 
 #contenedorProductos{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 20px;
     column-gap: 15px;
@@ -76,12 +205,14 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 #eliminarProductoCarrito{
     color: red;
     font-size: 25px;
     border: none;
+    background: none;
 }
 
 .modal-footer{
@@ -98,4 +229,65 @@ header{
     margin: 5px;
 }
 
+#footerBody{
+    display: flex;
+    
+}
 
+#footerBody h4{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+#footer{
+    margin-left: 10px;
+}
+
+
+/* pagina pago */
+
+
+
+
+
+#carrito-pago{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 60%;
+    margin: auto;
+}
+
+#containerCarrito{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#header-pago{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#header-pago h6 {
+    display: flex;
+    margin: 10px;
+}
+
+
+#containerCarrito h5{
+    margin-left: 10px;
+}
+
+
+#containerCarrito span {
+    margin-right: 10px;
+}
+
+
+#footer-pago{
+    display: flex;
+    justify-content: center;
+}
